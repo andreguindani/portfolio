@@ -48,12 +48,6 @@ mobileMenu.addEventListener('click', () => {
     navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
 });
 
-// Form submission
-document.querySelector('.contact-form').addEventListener('submit', (e) => {
-    e.preventDefault();
-    alert('Mensagem enviada com sucesso! Entrarei em contato em breve.');
-    e.target.reset();
-});
 
 // Typing effect for hero title
 const heroTitle = document.querySelector('.hero-content h1');
