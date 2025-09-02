@@ -45,6 +45,67 @@ nav {
     gap: 2rem;
 }
 
+/* Mobile menu styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(15, 15, 15, 0.98);
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        padding: 2rem;
+        gap: 1rem;
+        border-top: 1px solid rgba(220, 38, 38, 0.3);
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+        transform: translateY(-20px);
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+
+    .nav-links.active {
+        display: flex;
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .nav-links li {
+        text-align: center;
+        border-bottom: 1px solid rgba(220, 38, 38, 0.1);
+        padding-bottom: 1rem;
+    }
+
+    .nav-links li:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .nav-links a {
+        font-size: 1.1rem;
+        padding: 0.5rem 0;
+        display: block;
+        width: 100%;
+    }
+
+    .mobile-menu {
+        display: flex;
+    }
+
+    .mobile-menu.active span:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .mobile-menu.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .mobile-menu.active span:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
+
 .nav-links a {
     color: #e0e0e0;
     text-decoration: none;
@@ -94,7 +155,7 @@ nav {
     text-align: center;
     position: relative;
     background: radial-gradient(circle at center, rgba(220, 38, 38, 0.1) 0%, transparent 70%);
-    margin-bottom: 3rem; /* Added margin-bottom to create space between hero and next section */
+    margin-bottom: 2rem; /* Added margin-bottom to create space between hero and next section */
 }
 
 .hero-content h1 {
@@ -294,6 +355,7 @@ section {
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 .contact-item i {
@@ -412,16 +474,4 @@ footer {
         padding-left: 1rem;
         padding-right: 1rem;
     }
-}
-
-/* Scroll indicator */
-.scroll-indicator {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 0%;
-    height: 3px;
-    background: linear-gradient(45deg, #dc2626, #b91c1c);
-    z-index: 1001;
-    transition: width 0.3s ease;
 }
