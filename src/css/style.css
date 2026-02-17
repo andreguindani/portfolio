@@ -303,6 +303,26 @@ section {
     transform: translateY(-5px);
     border-color: #dc2626;
 }
+.project-button{
+    text-align: center;
+}
+
+.project-button a{
+    display: inline-block;
+    padding: 10px;
+    background: linear-gradient(45deg, #dc2626, #b91c1c);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 12px;
+    text-decoration: none;
+}
+.project-button a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(220, 38, 38, 0.3);
+}
+
 
 .project-image {
     height: 200px;
@@ -319,25 +339,24 @@ section {
 }
 
 .project-content h3 {
-    color: #dc2626;
+    color: #ffffff;
     margin-bottom: 1rem;
+    text-align: center;
+}
+
+.project-content p{
+    color: #ffffff;
+    text-align: center;
+}
+
+.project-card i{
+    color: #ffffff;
 }
 
 .project-links {
     margin-top: 1rem;
 }
 
-.project-links a {
-    display: inline-block;
-    margin-right: 1rem;
-    color: #dc2626;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.project-links a:hover {
-    color: #b91c1c;
-}
 
 /* Contact Section */
 .contact-content {
@@ -475,3 +494,4 @@ footer {
         padding-right: 1rem;
     }
 }
+
