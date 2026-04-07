@@ -1,178 +1,277 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>André Guindani</title>
+    <title>André Guindani | Desenvolvedor Full Stack</title>
+    <meta name="description" content="Portfólio de André Guindani, desenvolvedor full stack focado em interfaces modernas, sites institucionais e soluções web de impacto.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="src/css/style.css">
 </head>
-
 <body>
-    <header>
+    <div class="page-glow page-glow-one"></div>
+    <div class="page-glow page-glow-two"></div>
+
+    <header class="site-header">
         <nav>
-            <div class="logo">Portfólio</div>
+            <a href="#home" class="logo">André<span>Guindani</span></a>
             <ul class="nav-links">
-                <li><a href="#home">Início</a></li>
                 <li><a href="#about">Sobre</a></li>
                 <li><a href="#skills">Habilidades</a></li>
                 <li><a href="#projects">Projetos</a></li>
                 <li><a href="#contact">Contato</a></li>
             </ul>
-            <div class="mobile-menu">
+            <a href="#contact" class="nav-cta">Vamos conversar</a>
+            <button class="mobile-menu" aria-label="Abrir menu" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </nav>
     </header>
+
     <main>
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <h1>Olá, eu sou o André Guindani</h1>
-                <p>Desenvolvedor Web apaixonado por criar experiências digitais incríveis</p>
-                <a href="#projects" class="cta-button">Ver Meus Projetos</a>
+        <section id="home" class="hero section-shell">
+            <div class="hero-copy fade-in">
+                <span class="eyebrow">Disponível para novas oportunidades</span>
+                <h1>Desenvolvedor full stack que transforma ideias em experiências web claras, modernas e confiáveis.</h1>
+                <p>
+                    Crio sites, páginas institucionais e sistemas com foco em boa apresentação,
+                    performance e uma experiência que passa profissionalismo desde o primeiro scroll.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">Ver projetos</a>
+                    <a href="#contact" class="btn btn-secondary">Falar comigo</a>
+                </div>
+                <div class="hero-highlights">
+                    <div>
+                        <strong>3+ anos</strong>
+                        <span>desenvolvendo soluções web</span>
+                    </div>
+                    <div>
+                        <strong>Front + Back</strong>
+                        <span>entrega completa e organizada</span>
+                    </div>
+                    <div>
+                        <strong>SC, Brasil</strong>
+                        <span>aberto a trabalho remoto</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-panel fade-in">
+                <div class="hero-card profile-card">
+                    <div class="profile-photo-frame">
+                        <img src="src/assets/images/andre-guindani.jpg" alt="Foto de André Guindani" class="profile-photo">
+                    </div>
+                    <div class="profile-badge">
+                        <span class="status-dot"></span>
+                        Perfil profissional
+                    </div>
+                    <h2>André Guindani</h2>
+                    <p>Full Stack Developer</p>
+                    <ul class="profile-points">
+                        <li><i class="fa-solid fa-check"></i> Interfaces responsivas e bem resolvidas</li>
+                        <li><i class="fa-solid fa-check"></i> Estrutura limpa em HTML, CSS, JS, PHP e Java</li>
+                        <li><i class="fa-solid fa-check"></i> Comunicação visual alinhada ao objetivo do negócio</li>
+                    </ul>
+                </div>
+                <div class="hero-card metrics-card">
+                    <div>
+                        <span class="metric-label">Especialidades</span>
+                        <strong>Landing pages, institucional e sistemas web</strong>
+                    </div>
+                    <div>
+                        <span class="metric-label">Stack</span>
+                        <strong>JavaScript, PHP, Java, MySQL, PostgreSQL</strong>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="about">
-            <h2 class="section-title fade-in">Sobre Mim</h2>
-            <div class="about-content fade-in">
-                <div class="about-image">
-                    <img src="/placeholder.svg?height=250&width=250" alt="Foto de perfil">
-                </div>
-                <div class="about-text">
+        <section id="about" class="section-shell">
+            <div class="section-heading fade-in">
+                <span class="eyebrow">Sobre mim</span>
+                <h2 class="section-title">Uma apresentação profissional, direta e focada em resultado.</h2>
+            </div>
+
+            <div class="about-grid fade-in">
+                <article class="about-card about-main">
                     <h3>Desenvolvedor Full Stack</h3>
-                    <p>Sou um desenvolvedor apaixonado por tecnologia com mais de 3 anos de experiência criando soluções
-                        web modernas e eficientes. Especializado em HTML, CSS, PHP, JavaScript e tecnologias
-                        relacionadas.</p>
-                    <p>Sempre em busca de novos desafios e oportunidades para crescer profissionalmente</p>
-                </div>
+                    <p>
+                        Sou um desenvolvedor apaixonado por tecnologia e por construir experiências digitais que transmitam confiança.
+                        Trabalho unindo organização de código, identidade visual consistente e foco no que realmente importa para quem vai contratar.
+                    </p>
+                    <p>
+                        Meu objetivo é entregar projetos que não apenas funcionem bem, mas que também pareçam profissionais,
+                        atuais e preparados para representar bem uma marca ou produto.
+                    </p>
+                </article>
+
+                <aside class="about-card about-side">
+                    <h3>O que você encontra aqui</h3>
+                    <div class="tag-list">
+                        <span>Design limpo</span>
+                        <span>Boa responsividade</span>
+                        <span>Código organizado</span>
+                        <span>Clareza visual</span>
+                        <span>Manutenção simples</span>
+                        <span>Experiência moderna</span>
+                    </div>
+                </aside>
             </div>
         </section>
 
-        <section id="skills">
-            <h2 class="section-title fade-in">Minhas Habilidades</h2>
+        <section id="skills" class="section-shell">
+            <div class="section-heading fade-in">
+                <span class="eyebrow">Habilidades</span>
+                <h2 class="section-title">Tecnologias que uso para construir experiências completas.</h2>
+            </div>
+
             <div class="skills-grid fade-in">
-                <div class="skill-card">
+                <article class="skill-card">
                     <i class="fab fa-js-square"></i>
                     <h3>JavaScript</h3>
-                    <p>Linguagem versátil para desenvolvimento web moderno e aplicações interativas</p>
-                </div>
-                <div class="skill-card">
+                    <p>Interações fluidas, componentes dinâmicos e interfaces mais vivas para a web moderna.</p>
+                </article>
+                <article class="skill-card">
                     <i class="fab fa-html5"></i>
                     <h3>HTML</h3>
-                    <p>Estruturação semântica de páginas web e boas práticas de acessibilidade</p>
-                </div>
-                <div class="skill-card">
+                    <p>Estrutura semântica bem pensada, acessível e pronta para evolução.</p>
+                </article>
+                <article class="skill-card">
                     <i class="fab fa-css3-alt"></i>
                     <h3>CSS</h3>
-                    <p>Estilização avançada, layouts responsivos e animações</p>
-                </div>
-                <div class="skill-card">
+                    <p>Layouts responsivos, hierarquia visual forte e acabamento profissional.</p>
+                </article>
+                <article class="skill-card">
                     <i class="fab fa-php"></i>
                     <h3>PHP</h3>
-                    <p>Desenvolvimento de APIs e integração com bancos de dados</p>
-                </div>
-                <div class="skill-card">
+                    <p>Back-end funcional, integrações e organização para projetos sob medida.</p>
+                </article>
+                <article class="skill-card">
                     <i class="fab fa-java"></i>
                     <h3>Java</h3>
-                    <p>Desenvolvimento de aplicações robustas e orientadas a objetos</p>
-                </div>
-                <div class="skill-card">
+                    <p>Aplicações robustas com foco em estrutura, estabilidade e manutenção.</p>
+                </article>
+                <article class="skill-card">
                     <i class="fas fa-database"></i>
                     <h3>Banco de Dados</h3>
-                    <p>MySQL, PostgreSQL, design de esquemas e otimização de consultas</p>
-                </div>
+                    <p>Modelagem, consultas e persistência de dados com MySQL e PostgreSQL.</p>
+                </article>
             </div>
         </section>
 
-        <section id="projects">
-            <h2 class="section-title fade-in">Meus Projetos</h2>
+        <section id="projects" class="section-shell">
+            <div class="section-heading fade-in">
+                <span class="eyebrow">Projetos</span>
+                <h2 class="section-title">Projetos pensados para mostrar clareza, capricho visual e execução técnica.</h2>
+            </div>
+
             <div class="projects-grid fade-in">
-                <div class="project-card">
-                    <div class="project-image">
+                <article class="project-card featured-project">
+                    <div class="project-topline">
+                        <span class="project-pill">Destaque</span>
                         <i class="fa-solid fa-cow"></i>
                     </div>
-                    <div class="project-content">
-                        <h3>NutriAgro</h3>
-                        <p>Página institucional desenvolvida para uma fábrica de farinha 
-                        destinada à nutrição animal. O projeto apresenta produtos, 
-                        processos produtivos e informações técnicas, com foco em usabilidade, 
-                        clareza e identidade visual alinhada ao setor agroindustrial.
-                        Projeto fictício criado exclusivamente para fins de portfólio.</p>
+                    <h3>NutriAgro</h3>
+                    <p>
+                        Página institucional criada para uma marca fictícia do setor agroindustrial,
+                        com foco em credibilidade, clareza de informação e identidade visual alinhada ao nicho.
+                    </p>
+                    <div class="project-tags">
+                        <span>Institucional</span>
+                        <span>Responsivo</span>
+                        <span>UI focada em negócio</span>
                     </div>
-                    <div class="project-button">
-                        <a href="projects-nutriagro.html">Saiba mais</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
+                    <a href="projects-nutriagro.html" class="project-link">Ver estudo do projeto</a>
+                </article>
+
+                <article class="project-card featured-project">
+                    <div class="project-topline">
+                        <span class="project-pill">Rede Social</span>
                         <i class="fa-solid fa-baseball"></i>
                     </div>
-                    <div class="project-content">
-                        <h3>Em breve</h3>
-                        <p></p>
+                    <h3>SportForYou</h3>
+                    <p>
+                        Plataforma web criada para conectar praticantes de esportes e organizadores,
+                        reunindo feed social, busca de usuários, eventos, mensagens e perfis personalizados.
+                    </p>
+                    <div class="project-tags">
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>Rede social</span>
                     </div>
-                    <div class="project-button">
-                        <a href="projects-.html">Saiba mais</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
+                    <a href="projects-sportforyou.html" class="project-link">Ver estudo do projeto</a>
+                </article>
+
+                <article class="project-card soon-project">
+                    <div class="project-topline">
+                        <span class="project-pill neutral">Próximo case</span>
                         <i class="fas fa-shopping-cart"></i>
                     </div>
-                    <div class="project-content">
-                        <h3>Em breve</h3>
-                        <p></p>
+                    <h3>E-commerce concept</h3>
+                    <p>
+                        Conceito de experiência para vitrine de produtos com foco em conversão,
+                        boa leitura dos blocos e apresentação mais premium.
+                    </p>
+                    <div class="project-tags">
+                        <span>Conversão</span>
+                        <span>Catálogo</span>
                     </div>
-                    <div class="project-button">
-                        <a href="projects--.html">Saiba mais</a>
-                    </div>
-                </div>
+                    <a href="projects--.html" class="project-link">Ver detalhes</a>
+                </article>
             </div>
         </section>
 
-        <section id="contact">
-            <h2 class="section-title fade-in">Entre em Contato</h2>
-            <div class="contact-content fade-in">
-                <div class="contact-info">
-                    <h3>Vamos conversar!</h3>
-                    <p>Estou sempre aberto a novas oportunidades e projetos interessantes. Entre em contato comigo!</p>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>aguindani7@gmail.com</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <span>+55 (49) 99820-2008</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Tangará, SC - Brasil</span>
+        <section id="contact" class="section-shell">
+            <div class="contact-panel fade-in">
+                <div class="contact-copy">
+                    <span class="eyebrow">Contato</span>
+                    <h2 class="section-title">Se você procura alguém para construir uma presença web mais forte, vamos conversar.</h2>
+                    <p>
+                        Estou aberto a oportunidades, freelas e projetos em que design, clareza e execução técnica precisam andar juntos.
+                    </p>
+                    <div class="contact-list">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>aguindani7@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+55 (49) 99820-2008</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-location-dot"></i>
+                            <span>Tangará, SC - Brasil</span>
+                        </div>
                     </div>
                 </div>
+
                 <form class="contact-form" action="https://formsubmit.co/aguindani7@gmail.com" method="POST">
-                    <input type="text" name="name" placeholder="Seu Nome" required>
-                    <input type="email" name="email" placeholder="Seu Email" required>
-                    <input type="text" name="_subject" placeholder="Assunto" required>
-                    <textarea name="message" rows="5" placeholder="Sua Mensagem" required></textarea>
-                    <button type="submit">Enviar Mensagem</button>
+                    <input type="hidden" name="_subject" value="Novo contato pelo portfólio">
+                    <input type="text" name="name" placeholder="Seu nome" required>
+                    <input type="email" name="email" placeholder="Seu e-mail" required>
+                    <input type="text" name="company" placeholder="Empresa ou projeto">
+                    <textarea name="message" rows="5" placeholder="Me conte brevemente sobre a oportunidade" required></textarea>
+                    <button type="submit" class="btn btn-primary btn-full">Enviar mensagem</button>
                 </form>
             </div>
         </section>
     </main>
+
     <footer>
         <div class="social-links">
-            <a href="https://github.com/andreguindani" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/andr%C3%A9guindani/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/andreguindani_/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/andreguindani" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/andr%C3%A9guindani/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/andreguindani_/" target="_blank" rel="noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
         </div>
-        <p>&copy; 2025 André Guindani. Todos os direitos reservados.</p>
+        <p>&copy; 2026 André Guindani. Todos os direitos reservados.</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
-
 </html>

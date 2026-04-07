@@ -1,96 +1,155 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NutriAgro • Projeto</title>
+    <title>NutriAgro | Estudo de Projeto</title>
+    <meta name="description" content="Estudo do projeto NutriAgro, desenvolvido por André Guindani para demonstrar uma página institucional moderna para o setor agroindustrial.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="src/css/project.css">
 </head>
+<body class="project-page">
+    <div class="page-glow page-glow-one"></div>
+    <div class="page-glow page-glow-two"></div>
 
-<body>
-
-
-
-<main>
-    <!-- Conteúdo -->
-    <section>
-
-        <h2 class="section-title fade-in">NutriAgro</h2>
-
-        <p class="project-warning fade-in">
-            Projeto fictício desenvolvido exclusivamente para fins de portfólio.
-            A empresa apresentada não existe.
-        </p>
-
-        <div class="project-text fade-in">
-
-            <h3>Visão Geral</h3>
-            <p>
-                NutriAgro é uma página institucional criada para representar uma fábrica
-                de farinha destinada à nutrição animal. O projeto apresenta produtos,
-                processos produtivos e informações técnicas com foco em clareza,
-                credibilidade e navegação intuitiva.
-            </p>
-
-            <h3>Objetivo</h3>
-            <p>
-                Demonstrar a apresentação profissional de produtos agroindustriais,
-                organizar informações técnicas de forma acessível e transmitir confiança
-                por meio de uma identidade visual moderna e alinhada ao setor.
-            </p>
-
-            <h3>Funcionalidades</h3>
-            <ul>
-                <li>Layout totalmente responsivo</li>
-                <li>Seção de apresentação de produtos</li>
-                <li>Organização clara das informações técnicas</li>
-                <li>Área de contato institucional</li>
+    <header class="site-header scrolled">
+        <nav>
+            <a href="index.html#home" class="logo">André<span>Guindani</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html#about">Sobre</a></li>
+                <li><a href="index.html#skills">Habilidades</a></li>
+                <li><a href="index.html#projects" class="active">Projetos</a></li>
+                <li><a href="index.html#contact">Contato</a></li>
             </ul>
+            <a href="index.html#contact" class="nav-cta">Vamos conversar</a>
+            <button class="mobile-menu" aria-label="Abrir menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
 
-        </div>
-    </section>
+    <main>
+        <section class="section-shell project-hero">
+            <span class="eyebrow fade-in">Case em destaque</span>
+            <h1 class="project-title fade-in">NutriAgro</h1>
+            <div class="project-layout">
+                <article class="project-overview fade-in">
+                    <p>
+                        Projeto conceitual criado para representar uma empresa do setor agroindustrial com uma comunicação visual mais confiável,
+                        organizada e preparada para transmitir seriedade comercial.
+                    </p>
+                    <div class="project-tags">
+                        <span>Página institucional</span>
+                        <span>Responsivo</span>
+                        <span>Setor agro</span>
+                    </div>
+                    <a href="index.html#projects" class="btn btn-secondary back-link">Voltar ao portfólio</a>
+                </article>
 
-    <section>
-        <h2 class="section-title fade-in">Tecnologias Utilizadas</h2>
-        <div class="skills-grid fade-in">
-            <div class="skill-card">
-                <i class="fab fa-html5"></i>
-                <h3>HTML5</h3>
-                <p>Estrutura semântica e organização do conteúdo.</p>
+                <aside class="project-overview project-meta fade-in">
+                    <div>
+                        <span class="metric-label">Objetivo</span>
+                        <strong>Mostrar um institucional com linguagem visual madura e clara</strong>
+                    </div>
+                    <div>
+                        <span class="metric-label">Papel</span>
+                        <strong>Direção visual, estrutura front-end e experiência da página</strong>
+                    </div>
+                    <div>
+                        <span class="metric-label">Stack</span>
+                        <strong>HTML, CSS, JavaScript</strong>
+                    </div>
+                </aside>
             </div>
-            <div class="skill-card">
-                <i class="fab fa-css3-alt"></i>
-                <h3>CSS3</h3>
-                <p>Estilização moderna e layout responsivo.</p>
-            </div>
-            <div class="skill-card">
-                <i class="fab fa-js-square"></i>
-                <h3>JavaScript</h3>
-                <p>Interatividade e melhorias na experiência do usuário.</p>
-            </div>
-            <div class="skill-card">
-                <i class="fas fa-mobile-alt"></i>
-                <h3>Responsividade</h3>
-                <p>Adaptação perfeita para dispositivos móveis.</p>
-            </div>
-        </div>
-        <div class="project-button">
-            <a href="index.html#projects">Voltar ao portfólio</a>
-        </div>
-    </section>
+        </section>
 
-</main>
- <footer>
+        <section class="section-shell">
+            <div class="section-heading fade-in">
+                <span class="eyebrow">Visão do projeto</span>
+                <h2 class="section-title">Uma página criada para passar credibilidade desde o primeiro contato.</h2>
+            </div>
+
+            <div class="project-section-grid">
+                <article class="project-section-card fade-in">
+                    <h3>Contexto</h3>
+                    <p>
+                        A proposta foi desenvolver um site institucional para uma fábrica fictícia de farinha voltada à nutrição animal,
+                        valorizando clareza de informação, organização técnica e um visual compatível com o segmento.
+                    </p>
+                </article>
+                <article class="project-section-card fade-in">
+                    <h3>Decisão visual</h3>
+                    <p>
+                        O layout foi pensado para equilibrar seriedade e modernidade, com blocos bem definidos,
+                        leitura fácil e destaque para os pontos mais importantes da empresa e dos produtos.
+                    </p>
+                </article>
+                <article class="project-section-card fade-in">
+                    <h3>Funcionalidades</h3>
+                    <ul>
+                        <li>Layout totalmente responsivo</li>
+                        <li>Apresentação clara de produtos e processos</li>
+                        <li>Seções informativas com boa hierarquia visual</li>
+                        <li>Contato institucional objetivo</li>
+                    </ul>
+                </article>
+                <article class="project-section-card fade-in">
+                    <h3>Resultado</h3>
+                    <p>
+                        O projeto reforça minha capacidade de criar experiências institucionais bem apresentadas,
+                        com foco em confiança, capricho visual e navegação organizada.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-shell">
+            <div class="section-heading fade-in">
+                <span class="eyebrow">Tecnologias</span>
+                <h2 class="section-title">Base técnica utilizada no desenvolvimento.</h2>
+            </div>
+
+            <div class="timeline-grid">
+                <article class="timeline-card fade-in">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
+                    <p>Estruturação semântica para organizar o conteúdo institucional com clareza.</p>
+                </article>
+                <article class="timeline-card fade-in">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                    <p>Estilização responsiva com foco em consistência visual e acabamento profissional.</p>
+                </article>
+                <article class="timeline-card fade-in">
+                    <i class="fab fa-js-square"></i>
+                    <h3>JavaScript</h3>
+                    <p>Interações leves para melhorar a experiência sem comprometer objetividade.</p>
+                </article>
+                <article class="timeline-card fade-in">
+                    <i class="fas fa-mobile-screen"></i>
+                    <h3>Responsividade</h3>
+                    <p>Adaptação para diferentes telas, mantendo boa leitura e hierarquia.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
         <div class="social-links">
-            <a href="https://github.com/andreguindani" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/andr%C3%A9guindani/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/andreguindani_/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/andreguindani" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/andr%C3%A9guindani/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/andreguindani_/" target="_blank" rel="noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
         </div>
-        <p>&copy; 2025 André Guindani. Todos os direitos reservados.</p>
+        <p>&copy; 2026 André Guindani. Todos os direitos reservados.</p>
     </footer>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
+
+
