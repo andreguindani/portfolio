@@ -1,0 +1,4 @@
+﻿User-agent: *
+Allow: /
+
+Sitemap: https://andreguindani.vercel.app/sitemap.xml
